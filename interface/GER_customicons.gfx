@@ -1,0 +1,7 @@
+spriteTypes = { 
+ SpriteType = { 
+ name = "German_Election" 
+ texturefile = "gfx/interface/goals/German_Election.dds" 
+legacy_lazy_load = no
+ }
+}
