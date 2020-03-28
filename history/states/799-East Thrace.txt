@@ -1,0 +1,21 @@
+state={
+	id=799
+	name="STATE_799"
+	provinces={
+		11774 11905 
+	}
+	manpower=354325
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history={
+		owner = BUL
+		victory_points = {
+			3320 3
+		}
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = BUL
+		add_core_of = GRE
+	}
+}
