@@ -1,0 +1,24 @@
+ideas = {
+  country = {
+    bloody_june_uk = {
+      allowed = {
+        original_tag = ENG
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      picture =
+
+      removal_cost = -1
+
+      modifier = {
+        conscription_factor = -0.40
+        stability_factor = -0.40
+        production_speed_arms_factory_factor = -0.25
+        production_speed_industrial_complex_factor = -0.25
+      }
+    }
+  }
+}
