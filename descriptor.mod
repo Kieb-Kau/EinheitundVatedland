@@ -6,5 +6,5 @@ tags={
 	"Gameplay"
 }
 name="Einheit und Vaterland"
-supported_version="1.9.1"
+supported_version="1.9.*"
 replace_path=events

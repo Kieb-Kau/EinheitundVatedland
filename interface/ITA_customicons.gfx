@@ -1,38 +1,46 @@
 spriteTypes = { 
-  SpriteType = { 
- name = "GFX_ITA_1" 
- texturefile = "gfx/interface/goals/ITA_2.dds" 
- }
- SpriteType = { 
- name = "GFX_ITA_2" 
- texturefile = "gfx/interface/goals/ITA_5.dds" 
- }
- SpriteType = { 
- name = "GFX_ITA_3" 
- texturefile = "gfx/interface/goals/ITA_4.dds" 
- }
- SpriteType = { 
- name = "GFX_ITA_4" 
- texturefile = "gfx/interface/goals/ITA_1.dds" 
- }
- SpriteType = { 
- name = "GFX_ITA_5" 
- texturefile = "gfx/interface/goals/ITA_3.dds" 
- }
-  SpriteType = { 
- name = "GFX_ITA_6" 
- texturefile = "gfx/interface/goals/ITA_6.dds" 
- }
- SpriteType = { 
- name = "GFX_ITA_7" 
- texturefile = "gfx/interface/goals/ITA_7.dds" 
- }
- SpriteType = { 
- name = "GFX_ITA_8" 
- texturefile = "gfx/interface/goals/ITA_8.dds" 
- }
- SpriteType = { 
- name = "GFX_ITA_9" 
- texturefile = "gfx/interface/goals/ITA_9.dds" 
- }
+	SpriteType = { 
+ 		name = "GFX_ITA_1" 
+ 		texturefile = "gfx/interface/goals/ITA_2.dds" 
+  	}
+
+ 	SpriteType = { 
+ 		name = "GFX_ITA_2" 
+ 		texturefile = "gfx/interface/goals/ITA_5.dds" 
+ 	}
+
+ 	SpriteType = { 
+ 		name = "GFX_ITA_3" 
+ 		texturefile = "gfx/interface/goals/ITA_4.dds" 
+ 	}
+
+ 	SpriteType = { 
+ 		name = "GFX_ITA_4" 
+ 		texturefile = "gfx/interface/goals/ITA_1.dds" 
+ 	}
+
+ 	SpriteType = { 
+ 		name = "GFX_ITA_5" 
+ 		texturefile = "gfx/interface/goals/ITA_3.dds" 
+ 	}
+
+  	SpriteType = { 
+ 		name = "GFX_ITA_6" 
+ 		texturefile = "gfx/interface/goals/ITA_6.dds" 
+ 	}
+
+ 	SpriteType = { 
+ 		name = "GFX_ITA_7" 
+ 		texturefile = "gfx/interface/goals/ITA_7.dds" 
+ 	}
+
+ 	SpriteType = { 
+ 		name = "GFX_ITA_8" 
+ 		texturefile = "gfx/interface/goals/ITA_8.dds" 
+ 	}
+
+ 	SpriteType = { 
+ 		name = "GFX_ITA_9" 
+ 		texturefile = "gfx/interface/goals/ITA_9.dds" 
+ 	}
  }

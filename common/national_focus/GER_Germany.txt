@@ -7,6 +7,8 @@ focus_tree = {
 			tag = GER
 		}
 	}
+
+	continuous_focus_position = { x = 10 y = 20 }
 	#Focus for Expand German Influence
 	focus = {
 		id = GER_expandgermaninfluence

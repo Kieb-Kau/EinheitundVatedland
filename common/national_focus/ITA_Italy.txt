@@ -561,7 +561,7 @@ target = AUS
 	#Focus for Africa Italiana
 	focus = {
 		id = ITA_africa_italiana
-		icon = GFX_ITA_6
+		icon = GFX_ITA_8
 		x = 8
 		y = 3
 		cost = 10
@@ -603,7 +603,7 @@ target = AUS
 	#Focus for Rivendica la Tunisia
 	focus = {
 		id = ITA_rivendica_la_tunisia
-		icon = GFX_ITA_8
+		icon = GFX_ITA_9
 		x = 10
 		y = 4
 		cost = 10
@@ -617,7 +617,7 @@ target = AUS
 	#Focus for Conferenza di Tripoli
 	focus = {
 		id = ITA_conferenza_di_tripoli
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_7
 		x = 10
 		y = 5
 		cost = 10
