@@ -4501,5 +4501,9 @@ spriteTypes = {
 		name = "GFX_idea_sons_of_poland"
 		texturefile = "gfx/interface/ideas/sons_of_poland.dds"
 	}
+		spriteType = {
+		name = "GFX_idea_revolution"
+		texturefile = "gfx/interface/ideas/revolution.dds"
+	}
 	
 }
