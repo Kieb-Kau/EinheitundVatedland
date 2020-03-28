@@ -1,0 +1,98 @@
+add_namespace = italy
+country_event = {
+    id = italy.1
+    title = italy.1.t
+    desc = italy.1.d
+    picture = GFX_i_love_gays
+    is_triggered_only = yes
+        
+    option = {
+        name = italy.1.a
+        ai_chance = { factor = 100 }
+        random_country = {
+            limit = {
+                if = {
+                    limit = {
+                        AUS = {
+                            OR = {
+                                is_in_faction = no
+                                is_faction_leader = yes
+                            }
+                        }
+                    }
+                    original_tag = AUS
+                    else = {
+                        is_in_faction_with = AUS
+                        is_faction_leader = yes
+                    }
+                }
+            }
+            random_country = {
+                limit = {
+                    if = {
+                        limit = {
+                            ROOT = {
+                                OR = {
+                                    is_in_faction = no
+                                    is_faction_leader = yes
+                                }
+                            }
+                        }
+                        original_tag = ROOT
+                        else = {
+                            is_in_faction_with = ROOT
+                            is_faction_leader = yes
+                        }
+                    }
+                }
+                white_peace = PREV
+            }
+        }
+        if = {
+            limit = {
+                any_country = {
+                    OR = {
+                        original_tag = AUS
+                        is_in_faction_with = AUS
+                        is_subject_of = AUS
+                        AUS = {
+                            is_subject_of = PREV
+                        }
+                    }
+                    owns_state = 39
+                }
+            }
+            transfer_state = 39
+        }
+        if = {
+            limit = {
+                any_country = {
+                    OR = {
+                        original_tag = AUS
+                        is_in_faction_with = AUS
+                        is_subject_of = AUS
+                        AUS = {
+                            is_subject_of = PREV
+                        }
+                    }
+                    owns_state = 736
+                }
+            }
+            transfer_state = 736
+        }
+        if = {
+            limit = {
+                any_country = {
+                    OR = {
+                        original_tag = AUS
+                        is_in_faction_with = AUS
+                        is_subject_of = AUS
+                        AUS = {
+                            is_subject_of = PREV
+                        }
+                    }
+                    owns_state = 803
+                }
+            }
+            transfer_state = 803
+        }
