@@ -1,0 +1,1047 @@
+focus_tree = {
+	id = Soviet_Union
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+
+continuous_focus_position = { x = 2250 y = 350 }
+
+	#Focus for Increase Penalty for communism
+	focus = {
+		id = SOV_increasepenaltyforcommunism
+		icon = GFX_goal_unknown
+		x = 34
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_bancommunism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate economy
+	focus = {
+		id = SOV_integrateeconomy
+		icon = GFX_goal_unknown
+		x = 19
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_increaseeasternsphere 
+		}
+		prerequisite = { 
+			focus = SOV_requestresources 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Puppet the iron gate
+	focus = {
+		id = SOV_puppettheirongate
+		icon = GFX_goal_unknown
+		x = 18
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_industrializeeasterncountries 
+		}
+		prerequisite = { 
+			focus = SOV_integrateeconomy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Political Stability
+	focus = {
+		id = SOV_politicalstability
+		icon = GFX_goal_unknown
+		x = 42
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reinstateprovisionalgovernment }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Defence of democracy
+	focus = {
+		id = SOV_defenceofdemocracy
+		icon = GFX_goal_unknown
+		x = 42
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_politicalstability }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Westernize russia
+	focus = {
+		id = SOV_westernizerussia
+		icon = GFX_goal_unknown
+		x = 44
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_politicalstability }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Full Democracy
+	focus = {
+		id = SOV_fulldemocracy
+		icon = GFX_goal_unknown
+		x = 42
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_attemptcoupinfrance 
+		}
+		prerequisite = { 
+			focus = SOV_defenceofdemocracy 
+		}
+		prerequisite = { 
+			focus = SOV_westernizerussia 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Russias export industry
+	focus = {
+		id = SOV_russiasexportindustry
+		icon = GFX_goal_unknown
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_ironexports 
+		}
+		prerequisite = { 
+			focus = SOV_industrializeruralareas 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Anti Communist Campaigns
+	focus = {
+		id = SOV_anticommunistcampaigns
+		icon = GFX_goal_unknown
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_sendstalinintoexile }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stalin Leads The Path
+	focus = {
+		id = SOV_stalinleadsthepath
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SOV_criticizestalin }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for a
+	focus = {
+		id = SOV_a
+		icon = GFX_goal_unknown
+		x = 0
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for b
+	focus = {
+		id = SOV_b
+		icon = GFX_goal_unknown
+		x = 52
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recover from economic downfall
+	focus = {
+		id = SOV_recoverfromeconomicdownfall
+		icon = GFX_goal_generic_construction2
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_stalinleadsthepath }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 1
+ add_building_construction = {
+ type = industrial_complex
+ level = 1
+ instant_build = yes
+ }
+
+ set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+ }
+		}
+	}
+
+	#Focus for Criticize Stalin
+	focus = {
+		id = SOV_criticizestalin
+		icon = GFX_goal_unknown
+		x = 38
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SOV_stalinleadsthepath }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Send Stalin into exile
+	focus = {
+		id = SOV_sendstalinintoexile
+		icon = GFX_goal_unknown
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_criticizestalin }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Workers Commune
+	focus = {
+		id = SOV_workerscommune
+		icon = GFX_goal_unknown
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_recoverfromeconomicdownfall }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Warrior Commune
+	focus = {
+		id = SOV_warriorcommune
+		icon = GFX_goal_generic_military_sphere
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_recoverfromeconomicdownfall }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Political Instability
+	focus = {
+		id = SOV_politicalinstability
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_warriorcommune }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Belarus War Plans
+	focus = {
+		id = SOV_belaruswarplans
+		icon = GFX_goal_generic_territory_or_war
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reclaimoldrussianterritory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge the provisional government
+	focus = {
+		id = SOV_purgetheprovisionalgovernment
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_politicalinstability }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stalin the true god emperor
+	focus = {
+		id = SOV_stalinthetruegodemperor
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_finishtheromanovsoff 
+		}
+		prerequisite = { 
+			focus = SOV_purgetheprovisionalgovernment 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Red Rome
+	focus = {
+		id = SOV_theredrome
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_stalinthetruegodemperor 
+		}
+		prerequisite = { 
+			focus = SOV_taketheironfront 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Communism
+	focus = {
+		id = SOV_militarycommunism
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_workerscommune }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create The Iron Gate Pact
+	focus = {
+		id = SOV_createtheirongatepact
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_workerscommune }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Weapons project
+	focus = {
+		id = SOV_weaponsproject
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_militarycommunism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Scandinavian Trade Agreements
+	focus = {
+		id = SOV_scandinaviantradeagreements
+		icon = GFX_goal_unknown
+		x = 17
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_forcefinnishoccupation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for balkan joins the pact
+	focus = {
+		id = SOV_balkanjoinsthepact
+		icon = GFX_goal_unknown
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_createtheirongatepact }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Time for civilian change
+	focus = {
+		id = SOV_timeforcivilianchange
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_forgemilitaryfactorys 
+		}
+		prerequisite = { 
+			focus = SOV_weaponsproject 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Civilian railroads
+	focus = {
+		id = SOV_civilianrailroads
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_timeforcivilianchange }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialize Rural Areas
+	focus = {
+		id = SOV_industrializeruralareas
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_timeforcivilianchange }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Iron Exports
+	focus = {
+		id = SOV_ironexports
+		icon = GFX_goal_unknown
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_timeforcivilianchange }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Soviet Empire
+	focus = {
+		id = SOV_sovietempire
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_taketheironfront }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Help the iron pact economically
+	focus = {
+		id = SOV_helptheironpacteconomically
+		icon = GFX_goal_unknown
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_balkanjoinsthepact }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Anti German League
+	focus = {
+		id = SOV_antigermanleague
+		icon = GFX_goal_unknown
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_banfascism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Influence of baltic area
+	focus = {
+		id = SOV_increaseinfluenceofbalticarea
+		icon = GFX_goal_unknown
+		x = 33
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_putdowncommunistrevolts 
+		}
+		prerequisite = { 
+			focus = SOV_increasepenaltyforcommunism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Scandinavian Research treaty
+	focus = {
+		id = SOV_scandinavianresearchtreaty
+		icon = GFX_goal_unknown
+		x = 31
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_putdowncommunistrevolts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Democracy only
+	focus = {
+		id = SOV_democracyonly
+		icon = GFX_goal_unknown
+		x = 34
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_increaseinfluenceofbalticarea 
+		}
+		prerequisite = { 
+			focus = SOV_increasegermankaiserrealation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase eastern sphere
+	focus = {
+		id = SOV_increaseeasternsphere
+		icon = GFX_goal_unknown
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_scandinaviantradeagreements 
+		}
+		prerequisite = { 
+			focus = SOV_forcefulchange 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Request resources
+	focus = {
+		id = SOV_requestresources
+		icon = GFX_goal_unknown
+		x = 20
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_forcefulchange 
+		}
+		prerequisite = { 
+			focus = SOV_helptheironpacteconomically 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialize eastern countries
+	focus = {
+		id = SOV_industrializeeasterncountries
+		icon = GFX_goal_unknown
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_industrializeruralareas 
+		}
+		prerequisite = { 
+			focus = SOV_increaseeasternsphere 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stabilize new territories
+	focus = {
+		id = SOV_stabilizenewterritories
+		icon = GFX_goal_unknown
+		x = 13
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_keepmovingwest 
+		}
+		prerequisite = { 
+			focus = SOV_startmovingeast 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ukrainian Influence
+	focus = {
+		id = SOV_ukrainianinfluence
+		icon = GFX_goal_unknown
+		x = 32
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_scandinavianresearchtreaty 
+		}
+		prerequisite = { 
+			focus = SOV_increaseinfluenceofbalticarea 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Help release democratic parties
+	focus = {
+		id = SOV_helpreleasedemocraticparties
+		icon = GFX_goal_unknown
+		x = 36
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_democracyonly 
+		}
+		prerequisite = { 
+			focus = SOV_worldofdemocracy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Anti nazism campaign
+	focus = {
+		id = SOV_antinazismcampaign
+		icon = GFX_goal_unknown
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_banfascism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reclaim old russian territory
+	focus = {
+		id = SOV_reclaimoldrussianterritory
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_warriorcommune }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim= 86
+		}
+	}
+
+	#Focus for Ukrainian War Plans
+	focus = {
+		id = SOV_ukrainianwarplans
+		icon = GFX_goal_generic_dangerous_deal
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_reclaimoldrussianterritory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Take The Iron Front
+	focus = {
+		id = SOV_taketheironfront
+		icon = GFX_goal_generic_political_pressure
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_belaruswarplans 
+		}
+		prerequisite = { 
+			focus = SOV_ukrainianwarplans 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = UKR
+}
+create_wargoal= { 
+type = annex_everything 
+target = BLR
+}
+		}
+	}
+
+	#Focus for Finish The Romanovs off
+	focus = {
+		id = SOV_finishtheromanovsoff
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_politicalinstability }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinstate provisional government
+	focus = {
+		id = SOV_reinstateprovisionalgovernment
+		icon = GFX_goal_unknown
+		x = 42
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_anticommunistcampaigns }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Forge Military Factorys
+	focus = {
+		id = SOV_forgemilitaryfactorys
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_militarycommunism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force finnish occupation
+	focus = {
+		id = SOV_forcefinnishoccupation
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_createtheirongatepact }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Forceful Change
+	focus = {
+		id = SOV_forcefulchange
+		icon = GFX_goal_unknown
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_balkanjoinsthepact 
+		}
+		prerequisite = { 
+			focus = SOV_forcefinnishoccupation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The iron road
+	focus = {
+		id = SOV_theironroad
+		icon = GFX_goal_unknown
+		x = 9
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_theredrome
+		}
+		prerequisite = { 
+			focus = SOV_sovietempire
+			focus = SOV_civilianrailroads
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Keep moving west
+	focus = {
+		id = SOV_keepmovingwest
+		icon = GFX_goal_unknown
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_theironroad 
+		}
+		prerequisite = { 
+			focus = SOV_russiasexportindustry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Start moving east
+	focus = {
+		id = SOV_startmovingeast
+		icon = GFX_goal_unknown
+		x = 15
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_russiasexportindustry 
+		}
+		prerequisite = { 
+			focus = SOV_industrializeeasterncountries 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban communism
+	focus = {
+		id = SOV_bancommunism
+		icon = GFX_goal_unknown
+		x = 33
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_anticommunistcampaigns }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ban Fascism
+	focus = {
+		id = SOV_banfascism
+		icon = GFX_goal_unknown
+		x = 38
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_anticommunistcampaigns }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Put down communist revolts
+	focus = {
+		id = SOV_putdowncommunistrevolts
+		icon = GFX_goal_unknown
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_bancommunism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for World of democracy
+	focus = {
+		id = SOV_worldofdemocracy
+		icon = GFX_goal_unknown
+		x = 38
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_nazismnationalenemy1 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nazism National Enemy 1
+	focus = {
+		id = SOV_nazismnationalenemy1
+		icon = GFX_goal_unknown
+		x = 38
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_antinazismcampaign 
+		}
+		prerequisite = { 
+			focus = SOV_antigermanleague 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase German Kaiser Realation
+	focus = {
+		id = SOV_increasegermankaiserrealation
+		icon = GFX_goal_unknown
+		x = 35
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_increasepenaltyforcommunism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Attempt Coup in france
+	focus = {
+		id = SOV_attemptcoupinfrance
+		icon = GFX_goal_unknown
+		x = 40
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SOV_antigermanleague 
+		}
+		prerequisite = { 
+			focus = SOV_politicalstability 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

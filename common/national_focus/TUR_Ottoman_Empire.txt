@@ -1,0 +1,24 @@
+focus_tree = {
+	id = Ottoman_Empire
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	#Focus for Sultan's Liberty
+	focus = {
+		id = TUR_sultans_liberty
+		icon = GFX_goal_unknown
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

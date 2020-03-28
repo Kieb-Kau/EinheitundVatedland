@@ -1,0 +1,352 @@
+focus_tree = {
+	id = 1503244
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+	#Focus for Tsar speech
+	focus = {
+		id = BUL_tsarspeech
+		icon = GFX_goal_unknown
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Empower  the Junta
+	focus = {
+		id = BUL_empowerthejunta
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_tsarspeech }
+		mutually_exclusive = { focus = BUL_securethepowerofthetsar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secure the Power of the Tsar
+	focus = {
+		id = BUL_securethepowerofthetsar
+		icon = GFX_goal_unknown
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_tsarspeech }
+		mutually_exclusive = { focus = BUL_empowerthejunta }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge the military
+	focus = {
+		id = BUL_purgethemilitary
+		icon = GFX_goal_unknown
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_securethepowerofthetsar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 4th Balkan war
+	focus = {
+		id = BUL_4thbalkanwar
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BUL_demandwestthrace 
+		}
+		prerequisite = { 
+			focus = BUL_romanianrevolution 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Balkan Alliance
+	focus = {
+		id = BUL_balkanalliance
+		icon = GFX_goal_unknown
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_romanianalliance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Romanian revolution
+	focus = {
+		id = BUL_romanianrevolution
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bulgarian Expansion plan
+	focus = {
+		id = BUL_bulgarianexpansionplan
+		icon = GFX_goal_unknown
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_unityofbulgaria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand West Thrace
+	focus = {
+		id = BUL_demandwestthrace
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_bulgarianexpansionplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Romanian alliance
+	focus = {
+		id = BUL_romanianalliance
+		icon = GFX_goal_unknown
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_bulgarianexpansionplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Empower the tsar
+	focus = {
+		id = BUL_empowerthetsar
+		icon = GFX_goal_unknown
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_securethepowerofthetsar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Unity of bulgaria
+	focus = {
+		id = BUL_unityofbulgaria
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BUL_purgethemilitary 
+		}
+		prerequisite = { 
+			focus = BUL_empowerthetsar 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Continue political execution
+	focus = {
+		id = BUL_continuepoliticalexecution
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_assassinatetsar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Restabilize The State
+	focus = {
+		id = BUL_restabilizethestate
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_assassinatetsar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enstate the junta
+	focus = {
+		id = BUL_enstatethejunta
+		icon = GFX_goal_unknown
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BUL_restabilizethestate 
+		}
+		prerequisite = { 
+			focus = BUL_continuepoliticalexecution 
+		}
+		prerequisite = { 
+			focus = BUL_forcetsarshand 
+		}
+		prerequisite = { 
+			focus = BUL_allowthetsarsparty 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Exile Tsar
+	focus = {
+		id = BUL_exiletsar
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_empowerthejunta }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for a
+	focus = {
+		id = BUL_a
+		icon = GFX_goal_unknown
+		x = 0
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for b
+	focus = {
+		id = BUL_b
+		icon = GFX_goal_unknown
+		x = 36
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revolution in Sofia
+	focus = {
+		id = BUL_revolutioninsofia
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_tsarspeech }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assassinate Tsar
+	focus = {
+		id = BUL_assassinatetsar
+		icon = GFX_goal_unknown
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_empowerthejunta }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge Opposition
+	focus = {
+		id = BUL_purgeopposition
+		icon = GFX_goal_unknown
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_revolutioninsofia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Force tsars hand
+	focus = {
+		id = BUL_forcetsarshand
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_exiletsar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Allow the tsars party
+	focus = {
+		id = BUL_allowthetsarsparty
+		icon = GFX_goal_unknown
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BUL_exiletsar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

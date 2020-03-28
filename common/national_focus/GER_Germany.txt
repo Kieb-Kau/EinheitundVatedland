@@ -1,0 +1,537 @@
+focus_tree = {
+	id = Germany
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	#Focus for Expand German Influence
+	focus = {
+		id = GER_expandgermaninfluence
+		icon = GFX_focus_ger_reichskommisariats
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_ourtimeisnow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen Unions
+	focus = {
+		id = GER_strengthenunions
+		icon = GFX_goal_unknown
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_protestthestampact }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Sudetenland
+	focus = {
+		id = GER_demandsudetenland
+		icon = GFX_goal_generic_territory_or_war
+		x = 12
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_pressurenewbohemiankingdom }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = Germany.1
+}
+		}
+	}
+
+	#Focus for army
+	focus = {
+		id = GER_army
+		icon = GFX_goal_unknown
+		x = 37
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Austrian War of Unity
+	focus = {
+		id = GER_austrianwarofunity
+		icon = GFX_goal_generic_major_war
+		x = 8
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_pressureaustriandiplomats }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = AUS
+}
+		}
+	}
+
+	#Focus for Ultimatum to Luxembourg
+	focus = {
+		id = GER_ultimatumtoluxembourg
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_pressureluxembourg }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = LUX
+}
+		}
+	}
+
+	#Focus for Öffentlicher Verkehr
+	focus = {
+		id = GER_ffentlicherverkehr
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_gesellschaft }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Eisenbahn
+	focus = {
+		id = GER_eisenbahn
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_gesellschaft }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Attempt to stabilize the austrian state
+	focus = {
+		id = GER_attempttostabilizetheaustrianstate
+		icon = GFX_goal_unknown
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_decentralization }
+		mutually_exclusive = { focus = GER_pressurenewbohemiankingdom }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Intergrate Austrian economys
+	focus = {
+		id = GER_intergrateaustrianeconomys
+		icon = GFX_goal_unknown
+		x = 17
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_attempttostabilizetheaustrianstate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Unity
+	focus = {
+		id = GER_germanunity
+		icon = GFX_goal_generic_national_unity
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_strengthenournation 
+			focus = GER_radicalchange 
+		}
+		mutually_exclusive = { focus = GER_decentralization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+
+	#Focus for Protest the Stamp Act
+	focus = {
+		id = GER_protestthestampact
+		icon = GFX_goal_unknown
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = GER_strengthenourpower }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Anti-Communist Campaigns
+	focus = {
+		id = GER_anticommunistcampaigns
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_strengthenourpower }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas= anti_communist
+		}
+	}
+
+	#Focus for Strengthen Parliament
+	focus = {
+		id = GER_strengthenparliament
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anticommunistcampaigns }
+		mutually_exclusive = { focus = GER_loyaltytothekaiser }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democratic
+popularity = 0.2
+}
+		}
+	}
+
+	#Focus for Loyalty to the Kaiser
+	focus = {
+		id = GER_loyaltytothekaiser
+		icon = GFX_goal_unknown
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anticommunistcampaigns }
+		mutually_exclusive = { focus = GER_strengthenparliament }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50add_popularity= { 
+ideology = neutrality
+popularity = 0.1 
+}
+		}
+	}
+
+	#Focus for Decentralization
+	focus = {
+		id = GER_decentralization
+		icon = GFX_goal_unknown
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_strengthenournation 
+			focus = GER_radicalchange 
+		}
+		mutually_exclusive = { focus = GER_germanunity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen Our Power
+	focus = {
+		id = GER_strengthenourpower
+		icon = GFX_goal_unknown
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = GER_protestthestampact }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for Pressure Austrian Diplomats
+	focus = {
+		id = GER_pressureaustriandiplomats
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 8
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_pannationalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kaiserindustrie
+	focus = {
+		id = GER_kaiserindustrie
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gesellschaft
+	focus = {
+		id = GER_gesellschaft
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kaiserindustrie }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pressure new Bohemian kingdom
+	focus = {
+		id = GER_pressurenewbohemiankingdom
+		icon = GFX_goal_generic_forceful_treaty
+		x = 12
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_germanunity }
+		mutually_exclusive = { focus = GER_attempttostabilizetheaustrianstate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for b
+	focus = {
+		id = GER_b
+		icon = GFX_goal_unknown
+		x = 56
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pan-Nationalism
+	focus = {
+		id = GER_pannationalism
+		icon = GFX_goal_generic_territory_or_war
+		x = 7
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_expandgermaninfluence
+			focus = GER_germanunity
+		}
+		prerequisite = { 
+			focus = GER_decentralization
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The People's State
+	focus = {
+		id = GER_thepeoplesstate
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_stampriots }
+		mutually_exclusive = { focus = GER_thepeoplesvoice }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Radical Change
+	focus = {
+		id = GER_radicalchange
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_thepeoplesvoice 
+			focus = GER_thepeoplesstate 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stamp Riots
+	focus = {
+		id = GER_stampriots
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_strengthenunions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for a
+	focus = {
+		id = GER_a
+		icon = GFX_goal_unknown
+		x = 0
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our Time is Now
+	focus = {
+		id = GER_ourtimeisnow
+		icon = GFX_focus_generic_support_the_left_right
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_loyaltytothekaiser 
+			focus = GER_strengthenparliament 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for The People's Voice
+	focus = {
+		id = GER_thepeoplesvoice
+		icon = GFX_goal_unknown
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_stampriots }
+		mutually_exclusive = { focus = GER_thepeoplesstate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen Our Nation
+	focus = {
+		id = GER_strengthenournation
+		icon = GFX_goal_generic_demand_territory
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_ourtimeisnow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pressure Luxembourg
+	focus = {
+		id = GER_pressureluxembourg
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_pannationalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Militär
+	focus = {
+		id = GER_militr
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kaiserindustrie }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Waffenfabrik
+	focus = {
+		id = GER_waffenfabrik
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_militr }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
