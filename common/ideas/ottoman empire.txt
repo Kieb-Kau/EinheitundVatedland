@@ -1,0 +1,59 @@
+ideas = {
+
+	country = {
+
+		economic_crash = {
+			picture = economic_crash
+			allowed = {
+				original_tag = TUR
+
+			}
+
+			allowed_civil_war = {
+				tag = TUR
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					consumer_goods_factor = -0.15
+					industrial_capacity_factory = -0.15
+			}
+		}
+		corrupt_bureaucracy = {
+			picture = corrupt_bureaucracy
+			allowed = {
+				original_tag = TUR
+
+			}
+
+			allowed_civil_war = {
+				tag = TUR
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.20
+					army_morale_factor = -0.1
+			}
+		}
+		armenian_state_1 = {
+			picture = armenian_state_1
+			allowed = {
+				original_tag = TUR
+
+			}
+
+			allowed_civil_war = {
+				tag = TUR
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.05
+			}
+		}
+	}
+}

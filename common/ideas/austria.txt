@@ -1,0 +1,43 @@
+ideas = {
+
+	country = {
+
+		fallen = {
+			picture = fallen
+			allowed = {
+				original_tag = AUS
+
+			}
+
+			allowed_civil_war = {
+				tag = AUS
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.10
+					political_power_cost = 0.015
+			}
+		}
+		treaty_of_minsk = {
+			picture = treaty
+			allowed = {
+				original_tag = AUS
+
+			}
+
+			allowed_civil_war = {
+				tag = AUS
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					production_factory_efficiency_gain_factor = -0.05
+					industrial_capacity_factory = 0.10
+					consumer_goods_factor = 0.10
+			}
+		}
+	}
+}

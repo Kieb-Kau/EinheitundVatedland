@@ -1,0 +1,83 @@
+ideas = {
+
+	country = {
+
+		wilhelm_ii = {
+			picture = kaiser_wilhelm
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				tag = GER
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = 0.15
+					political_power_cost = 0.2
+			}
+		}
+		gott = {
+			picture = gott
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				tag = GER
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					offence = 0.05
+					army_core_defence_factor = 0.15
+			}
+		
+		}
+		stamp_act = {
+			picture = stamp_act
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				tag = GER
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					stability_factor = -0.05
+					war_support_factor = -0.05
+					political_power_cost = 0.2
+					consumer_goods_factor = -0.05
+					production_factory_efficiency_gain_factor = 0.05
+					production_factory_start_efficiency_factor = 0.10	
+					production_speed_arms_factory_factor	 = 0.10
+					production_speed_buildings_factor	= 0.10
+					production_speed_dockyard_factor	= 0.10
+					production_speed_industrial_complex_factor	= 0.10 
+					production_speed_infrastructure_factor	 = 0.10
+			}
+		}
+		high_command = {
+			picture = high_command
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				tag = GER
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					planning_speed = 0.25
+				}
+			}
+		}
+	}

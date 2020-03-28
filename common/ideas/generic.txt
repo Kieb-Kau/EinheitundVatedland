@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+
+		anti_communist = {
+			picture = anti_communist
+			allowed = {
+				always_allowed = no
+
+			}
+
+			allowed_civil_war = {
+				tag = AUS
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+					communist_drift = -0.05
+			}
+		}
+	}
+}
