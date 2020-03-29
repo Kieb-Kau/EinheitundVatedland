@@ -1,0 +1,121 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				ITA_versoiltirolo
+				ITA_spingilitalia
+				ITA_industriaperlemasse
+			}
+		}
+		"FRA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
+			}
+		}
+		"SPR"={
+			history = "SPR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = { NOT = { has_dlc = "Man the Guns" } }
+			ideas = {
+				#
+			}
+			focuses = {
+				#
+			}
+		}
+
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			ideas = {	
+				stamp_act
+				high_command
+				wilhelm_ii
+				gott
+			}
+			focuses = {
+				GER_obtainaustria
+				GER_germanelection
+				GER_adifferentfront
+			}
+		}
+		"TUR"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				#
+			}	
+			focuses = {
+				#
+			}		
+		}
+		"AUS"={
+			history = "AUS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				#
+			}	
+			focuses = {
+			#
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				trotskyite_plot
+				home_of_revolution
+			}
+			focuses = {
+				SOV_great_purge
+				SOV_claims_on_baltic
+				SOV_war_with_uk
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		"POL"={
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				#
+			}
+			focuses = {
+				#
+			}
+		}
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
