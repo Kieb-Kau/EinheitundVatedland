@@ -4505,5 +4505,9 @@ spriteTypes = {
 		name = "GFX_idea_revolution"
 		texturefile = "gfx/interface/ideas/revolution.dds"
 	}
+			spriteType = {
+		name = "Bloody_June"
+		texturefile = "gfx/interface/ideas/Bloody_Revolution.dds"
+	}
 	
 }
