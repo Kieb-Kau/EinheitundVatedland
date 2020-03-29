@@ -113,9 +113,7 @@ if = {
 set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
-	stiff_upper_lip
-	ENG_the_war_to_end_all_wars
-	george_v
+	bloody_june_uk
 }
 	
 
@@ -337,7 +335,7 @@ set_politics = {
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
 }
 set_popularities = {
-	democratic = 97
+	neutrality = 97
 	fascism = 2
 	communism = 1
 }
