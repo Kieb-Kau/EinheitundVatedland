@@ -62,7 +62,7 @@ bookmarks = {
 			}
 		}
 		"TUR"={
-			history = "ITA_GATHERING_STORM_DESC"
+			history = "TUR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				#
