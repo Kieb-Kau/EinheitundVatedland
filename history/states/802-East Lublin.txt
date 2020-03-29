@@ -1,13 +1,12 @@
-state={
-	id=802
-	name="STATE_802"
-	provinces={
-		422 3392 6546 11441 
+state = {
+	id = 802
+	name = "STATE_802"
+	provinces = {
+		422 3392 6546 11441
 	}
-	manpower=554235
-	buildings_max_level_factor=1.000
-state_category = rural
-	history={
+	manpower = 554235
+	state_category = rural
+	history = {
 		victory_points = {
 			6593 3
 		}

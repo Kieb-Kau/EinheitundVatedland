@@ -1,15 +1,14 @@
-state={
-	id=803
-	name="STATE_803"
-	provinces={
-		11564 
+state = {
+	id = 803
+	name = "STATE_803"
+	provinces = {
+		11564
 	}
-	manpower=234323
-	buildings_max_level_factor=1.000
+	manpower = 234323
 	state_category = rural
-	history={
+	history = {
 		victory_points = {
-			6626 1 
+			6626 1
 		}
 		owner = AUS
 		add_core_of = AUS
@@ -19,10 +18,7 @@ state={
 			infrastructure = 2
 			6626 = {
 				naval_base = 5
-
 			}
-
 		}
-
 	}
 }

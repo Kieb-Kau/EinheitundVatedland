@@ -1,13 +1,9 @@
-state={
-	id=800
-	name="STATE_800"
-	provinces={
-		13235 
-	}
-	manpower=453534
-	buildings_max_level_factor=1.000
+state = {
+	id = 800
+	name = "STATE_800"
+	manpower = 453534
 	state_category = rural
-	history= {
+	history = {
 		add_core_of = MOL
 		owner = ROM
 		victory_points = {
@@ -18,5 +14,8 @@ state={
 			air_base = 2
 		}
 		add_core_of = ROM
+	}
+	provinces = {
+		13235
 	}
 }

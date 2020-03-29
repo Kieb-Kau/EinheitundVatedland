@@ -1,13 +1,12 @@
-state={
-	id=801
-	name="STATE_801"
-	provinces={
-		1033 12101 
+state = {
+	id = 801
+	name = "STATE_801"
+	provinces = {
+		1033 12101
 	}
-	manpower=123556
-	buildings_max_level_factor=1.000
+	manpower = 123556
 	state_category = rural
-	history= {
+	history = {
 		add_core_of = SAU
 		owner = TUR
 		victory_points = {

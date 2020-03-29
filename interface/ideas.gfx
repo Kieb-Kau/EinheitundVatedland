@@ -4492,22 +4492,25 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_stamp_act"
 		texturefile = "gfx/interface/ideas/stamp_act.dds"
-	}			
-		spriteType = {
+	}	
+
+	spriteType = {
 		name = "GFX_idea_fallen"
 		texturefile = "gfx/interface/ideas/fallen.dds"
 	}	
-		spriteType = {
+
+	spriteType = {
 		name = "GFX_idea_sons_of_poland"
 		texturefile = "gfx/interface/ideas/sons_of_poland.dds"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_revolution"
 		texturefile = "gfx/interface/ideas/revolution.dds"
 	}
-			spriteType = {
-		name = "Bloody_June"
-		texturefile = "gfx/interface/ideas/Bloody_Revolution.dds"
+
+	spriteType = {
+		name = "GFX_idea_Bloody_June"
+		texturefile = "gfx/interface/ideas/Bloody_June.dds"
 	}
 	
 }

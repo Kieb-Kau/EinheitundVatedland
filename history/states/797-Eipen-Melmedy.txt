@@ -1,11 +1,11 @@
-state={
-	id=797
-	name="STATE_797"
+state = {
+	id = 797
+	name = "STATE_797"
 	manpower = 363563
-	
+
 	state_category = rural
-	
-	history={
+
+	history = {
 		owner = GER
 		victory_points = {
 			3320 3

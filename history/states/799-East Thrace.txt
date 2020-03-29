@@ -1,13 +1,12 @@
-state={
-	id=799
-	name="STATE_799"
-	provinces={
-		11774 11905 
+state = {
+	id = 799
+	name = "STATE_799"
+	provinces = {
+		11774 11905
 	}
-	manpower=354325
-	buildings_max_level_factor=1.000
+	manpower = 354325
 	state_category = rural
-	history={
+	history = {
 		owner = BUL
 		victory_points = {
 			3320 3
