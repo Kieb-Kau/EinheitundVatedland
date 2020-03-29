@@ -9,7 +9,7 @@ ideas = {
         always = no
       }
 
-      picture =
+      picture = Bloody_June
 
       removal_cost = -1
 
