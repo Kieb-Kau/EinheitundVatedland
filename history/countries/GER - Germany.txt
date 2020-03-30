@@ -290,16 +290,18 @@ create_import = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 56
-	democratic = 8
-	communism = 10
-	fascism = 26
+	authoritarian_democrat = 42
+	authoritarian_nationalist = 8
+	lenin_marxism = 10
+	liberalism = 19
+	social_democracy = 9
+	authoritarian = 12 
 }
 
 
@@ -328,7 +330,7 @@ create_country_leader = {
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Portrait_WilhelmII.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_ideology
 	traits = {
 	}
 }
