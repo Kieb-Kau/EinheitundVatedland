@@ -226,10 +226,12 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 24
+	democratic = 0
 	fascism = 0
 	neutrality = 0
-	communism = 26
+	communism = 0
+	liberalism = 25
+	lenin_marxism = 25
 	social_democracy = 50
 }
 
@@ -250,7 +252,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
-	ideology = socialism_ideology
+	ideology = social_democracy_ideology_ideology
 	traits = {
 		stout_defender
 	}
