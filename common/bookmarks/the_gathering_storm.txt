@@ -6,12 +6,12 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		
+
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				
+				vitttoria_mutilata
 			}
 			focuses = {
 				ITA_versoiltirolo
@@ -20,23 +20,18 @@ bookmarks = {
 			}
 		}
 		"FRA"={
-			history = "USA_GATHERING_STORM_DESC"
+			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
+				#
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_limited_intervention
-				USA_reestablish_the_gold_standard
+				#
 			}
 		}
 		"SPR"={
 			history = "SPR_GATHERING_STORM_DESC"
 			ideology = neutrality
-			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
 				#
 			}
@@ -48,8 +43,7 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = neutrality
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
-			ideas = {	
+			ideas = {
 				stamp_act
 				high_command
 				wilhelm_ii
@@ -65,34 +59,32 @@ bookmarks = {
 			history = "TUR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				#
-			}	
+				economic_crash
+			}
 			focuses = {
 				#
-			}		
+			}
 		}
 		"AUS"={
 			history = "AUS_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				#
-			}	
+				fallen
+				treaty_of_minsk
+			}
 			focuses = {
 			#
-			}			
+			}
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
+				revolution
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_claims_on_baltic
-				SOV_war_with_uk
-			}	
+				#
+			}
 		}
 
 		"---"={
@@ -111,8 +103,8 @@ bookmarks = {
 				#
 			}
 		}
-		
-		
+
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
