@@ -22,17 +22,21 @@ set_technology = {
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = liberalism
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
 }
 
 set_popularities = {
-	neutrality = 20
-	democratic = 65
-	fascism = 5
-	communism = 10
+socialism = 
+lenin_marxism = 30
+social_democracy = 10
+conservatism = 20
+liberalism = 40
+authoritarian_democrat = 0
+authoritarian_nationalist = 0
+authoritarian = 0
 }
 
 create_country_leader = {
@@ -40,7 +44,7 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "andriy_livytskyi.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberalism_ideology
 	traits = {
 		Rearmer
 	}
