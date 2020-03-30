@@ -16,6 +16,6 @@ state = {
 		add_core_of = ROM
 	}
 	provinces = {
-		13235
+		13235 13236
 	}
 }
