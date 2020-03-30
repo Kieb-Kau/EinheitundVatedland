@@ -177,24 +177,24 @@ if = {
 set_convoys = 10
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
 }
-set_popularities = {
-	democratic = 18
-	fascism = 15
-	communism = 2
-	neutrality = 65
-}
+	set_popularities = {
+		authoritarian = 71
+		authoritarian_democrat = 9
+		authoritarian_nationalist = 16
+		lenin_marxism = 4
+	}
 
 1939.1.1 = {
 	set_popularities = {
-		democratic = 13
-		fascism = 7
-		communism = 2
-		neutrality = 78
+		authoritarian = 71
+		authoritarian_democrat = 9
+		authoritarian_nationalist = 16
+		lenin_marxism = 4
 	}
 }
 add_ideas = {
@@ -208,7 +208,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Czartoryski.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = authoritarian_ideology
 	traits = {
 		#
 	}
