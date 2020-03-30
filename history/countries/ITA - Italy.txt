@@ -225,15 +225,16 @@ if = {
 set_convoys = 200
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 22
-	neutrality = 76
-	communism = 2
+	fascism = 0
+	neutrality = 0
+	communism = 0
+	authoritarian_democrat = 100
 }
 
 create_country_leader = {
@@ -263,7 +264,7 @@ create_country_leader = {
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
 	picture = "Victor.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_ideology
 	traits = {
 
 	}

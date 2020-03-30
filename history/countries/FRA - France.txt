@@ -220,16 +220,17 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 64
-	fascism = 1
-	neutrality = 15
-	communism = 20
+	democratic = 24
+	fascism = 0
+	neutrality = 0
+	communism = 26
+	social_democracy = 50
 }
 
 add_ideas = {
@@ -249,7 +250,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = socialism_ideology
 	traits = {
 		stout_defender
 	}

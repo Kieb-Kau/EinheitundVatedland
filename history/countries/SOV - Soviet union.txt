@@ -258,16 +258,20 @@ if = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = lenin_marxism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 41
-	fascism = 12
-	communism = 38
-	neutrality = 9
+	democratic = 0
+	liberalism = 15
+	conservatism = 15
+	social_democracy = 20
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	lenin_marxism = 50
 }
 
 
@@ -280,7 +284,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_STALIN_DESC"
 	picture = "Stalin.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = lenin_marxism_ideology
 	traits = {
 		
 	}
