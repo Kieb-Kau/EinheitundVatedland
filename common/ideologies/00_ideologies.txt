@@ -246,7 +246,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 207 56 33 }
+		color = { 105 0 33 }
 	
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -294,7 +294,7 @@ authoritarian = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 70 70 70 }
+		color = { 45 45 45 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -342,7 +342,7 @@ social_democracy = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 37 166 217 }
+		color = { 0 13 69 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -390,7 +390,7 @@ conservatism = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 37 130 217 }
+		color = { 0 30 105 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -437,7 +437,7 @@ liberalism = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 134 1 17 }
+		color = { 105 101 0 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -484,7 +484,7 @@ lenin_marxism = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 181 0 0 }
+		color = { 115 11 0 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -531,7 +531,7 @@ authoritarian_democrat = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 109 128 145 }
+		color = { 18 18 18 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -578,7 +578,7 @@ authoritarian_nationalist = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 186 150 84 }
+		color = { 0 0 0 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger

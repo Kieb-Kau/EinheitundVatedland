@@ -15,16 +15,19 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 82
-	democratic = 8
-	communism = 10
+	authoritarian_democrat = 37
+	authoritarian_nationalist = 3
+	social_democracy = 6
+	authoritarian = 23
+	liberalism = 4
+	conservatism =27
 }
 add_ideas = {
 fallen
@@ -38,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
 	picture = "Karl.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_ideology
 	traits = {
 		inexperinced_monarch
 	}

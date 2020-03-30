@@ -67,23 +67,26 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = conservatism
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 96
-	fascism = 2
-	communism = 2
+socialism = 12
+authoritarian = 8
+social_democracy = 24
+conservatism = 26
+liberalism = 23
+lenin_marxism = 1
+authoritarian_democrat = 2
+authoritarian_nationalist = 4
 }
 
 1939.1.1 = {
 	#next election october 39
 	set_popularities = {
-		democratic = 95
-		fascism = 2
-		communism = 3
+
 	}
 }
 
@@ -99,7 +102,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_ideology
 	traits = {
 		#
 	}
