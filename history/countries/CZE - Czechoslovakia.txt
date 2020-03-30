@@ -29,14 +29,13 @@ set_politics = {
 }
 
 set_popularities = {
-socialism = 0
 authoritarian = 12
 social_democracy = 6
 conservatism = 2
-liberalism = 12
+liberalism = 7
 lenin_marxism = 8
 authoritarian_democrat = 45
-authoritarian_nationalist = 25
+authoritarian_nationalist = 20
 }
 
 create_country_leader = {
