@@ -4512,5 +4512,9 @@ spriteTypes = {
 		name = "GFX_idea_Bloody_June"
 		texturefile = "gfx/interface/ideas/Bloody_June.dds"
 	}
+		spriteType = {
+		name = "GFX_idea_something_to_fight_for"
+		texturefile = "gfx/interface/ideas/something_to_fight_for.dds"
+	}
 	
 }
