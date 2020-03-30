@@ -234,7 +234,9 @@ set_popularities = {
 	fascism = 0
 	neutrality = 0
 	communism = 0
-	authoritarian_democrat = 100
+	social_democracy = 25
+	conservatism = 25
+	authoritarian_democrat = 50
 }
 
 create_country_leader = {
