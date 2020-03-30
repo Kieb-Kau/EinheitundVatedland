@@ -735,6 +735,21 @@
  ev_italy.1.t:0 "Austria Yields"
  ev_italy.1.d:0 "Austria has decided to give us our claims"
  ev_italy.1.a:0 "Gloria all'Italia!"
+
+ ev_italy.2.t:0 "Italy demands joint control of Tunisia!"
+ ev_italy.2.d:0 "The Italian government recently sent an ultimatium that we grant them joint control of Tunisia or they would go to war over it."
+ ev_italy.2.a:0 "We support their plan."
+ ev_italy.2.b:0 "Tunisia is ours, and only ours!"
+
+ ev_italy.3.t:0 "France folds"
+ ev_italy.3.d:0 "France has agreed to divide Tunisia between North and South for joint occupation."
+ ev_italy.3.a:0 "An excellent decision."
+
+ ev_italy.4.t:0 "France rejects our demands!"
+ ev_italy.4.d:0 "In an act of blatant ignorance and distaine for the Italian government, France has refused our brilliant offer!"
+ ev_italy.4.a:0 "To war it is then!"
+ ev_italy.4.b:0 "We can not afford war at this time."
+
  italy.2.t:0 "Zog Rejects the Ultimatum"
  italy.2.d:0 "Defiant to the last, King Zog has rejected our ultimatum. He and his advisors are now trying to scrape together whatever pitiful defenses Albania can muster. We must occupy Tirana and put an end to this farce!"
  italy.2.a:0 "We could have done this the easy way, Zog!"

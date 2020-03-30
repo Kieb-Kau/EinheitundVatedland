@@ -45,3 +45,98 @@ country_event = {
         }
     }
 }
+
+country_event = {
+  id = ev_italy.2 # Italy demands joint control of Tunisia
+  title = ev_italy.2.t
+  desc = ev_italy.2.d
+  is_triggered_only = yes
+  picture = news_event_canada_treaty
+
+  option = {
+    name = ev_italy.2.a # We support that plan
+    ai_chance = {
+      base = 40
+      modifier = {
+        any_other_country = {
+          original_tag = ITA
+          strength_ratio = {
+            tag = FRA
+            ratio > 1
+          }
+        }
+
+        factor = 0.50
+      }
+    }
+
+    ITA = {
+      country_event = ev_italy.3
+      set_state_owner = 806
+    }
+  }
+
+  option = {
+    name = ev_italy.2.b # Tunisia is ours, and ours only!
+    ai_chance = {
+      base = 60
+      modifier = {
+        any_other_country = {
+          original_tag = ITA
+          strength_ratio = {
+            tag = FRA
+            ratio < 1
+          }
+        }
+
+        factor = -0.50
+      }
+    }
+
+    ITA = {
+      country_event = ev_italy.4
+    }
+  }
+}
+
+country_event = {
+  id = ev_italy.3 # France accepts our demands
+  title = ev_italy.3.t
+  desc = ev_italy.3.d
+  is_triggered_only = yes
+  picture = news_event_canada_treaty
+
+  option = {
+    name = ev_italy.3.a # An excellent decision
+
+    add_political_power = 30
+  }
+}
+
+country_event = {
+  id = ev_italy.4 # France rejects our demands
+  title = ev_italy.4.t
+  desc = ev_italy.4.d
+  is_triggered_only = yes
+  picture = news_event_canada_treaty
+
+  option = {
+    name = ev_italy.4.a # To war it is!
+
+    ai_chance = { factor = 70 }
+    ITA = {
+      create_wargoal = {
+        type = take_state_focus
+        target = FRA
+        generator = { 806 }
+      }
+    }
+  }
+
+  option = {
+    name = ev_italy.4.b # We can not afford war
+
+    ai_chance = { factor = 30 }
+    add_stability = -0.10
+    add_political_power = -50
+  }
