@@ -5,6 +5,6 @@ tags={
 	"Alternative History"
 	"Gameplay"
 }
-name="Einheit und Vaterland"
+name="Einheit und Vaterland github"
 supported_version="1.9.*"
 replace_path=events
