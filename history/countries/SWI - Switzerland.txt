@@ -80,7 +80,7 @@ conservatism = 26
 liberalism = 23
 lenin_marxism = 1
 authoritarian_democrat = 2
-authoritarian_nationalist = 4
+authoritarian_nationalist = 5
 }
 
 1939.1.1 = {
