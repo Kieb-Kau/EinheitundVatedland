@@ -271,7 +271,7 @@ conservatism = 12
 liberalism = 8
 lenin_marxism = 12
 authoritarian_democrat = 15
-authoritarian_nationalist = 20
+authoritarian_nationalist = 10
 }
 
 
