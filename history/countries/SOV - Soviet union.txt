@@ -265,13 +265,13 @@ set_politics = {
 }
 set_popularities = {
 socialism = 35
-authoritarian = 3
+lenin_marxism = 12
 social_democracy = 5
 conservatism = 12
 liberalism = 8
-lenin_marxism = 12
 authoritarian_democrat = 15
 authoritarian_nationalist = 10
+authoritarian = 3
 }
 
 
